@@ -1,0 +1,92 @@
+schema_version: "1.0"
+
+preset:
+  id: "a11y-governance"
+  name: "A11Y Governance"
+  version: "0.2.0"
+  description: "Adds accessibility (WCAG 2.2 AA), bilingual DE/EN delivery, CEFR-B2 readability, and inclusive-content governance to Spec Kit."
+  author: "Thorsten Hindermann"
+  repository: "https://github.com/hindermath/spec-kit-preset-a11y-governance"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.8.0"
+
+provides:
+  templates:
+    - type: "template"
+      name: "constitution-template"
+      file: "templates/constitution-addendum.md"
+      description: "Append accessibility, bilingual-delivery, and CEFR-B2 governance"
+      strategy: "append"
+
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-addendum.md"
+      description: "Append accessibility applicability section"
+      strategy: "append"
+
+    - type: "template"
+      name: "plan-template"
+      file: "templates/plan-addendum.md"
+      description: "Append accessibility planning checks"
+      strategy: "append"
+
+    - type: "template"
+      name: "tasks-template"
+      file: "templates/tasks-addendum.md"
+      description: "Append accessibility, bilingual, and CEFR-B2 tasks"
+      strategy: "append"
+
+    - type: "template"
+      name: "a11y-agent-guidance-addendum-template"
+      file: "templates/agent-file-addendum.md"
+      description: "Standalone agent guidance addendum for accessibility governance"
+
+    - type: "template"
+      name: "a11y-checklist-template"
+      file: "templates/a11y-checklist-template.md"
+      description: "Starter accessibility review checklist with WCAG 2.2 AA criteria coverage"
+
+    - type: "template"
+      name: "bilingual-content-check-template"
+      file: "templates/bilingual-content-check-template.md"
+      description: "Starter bilingual content review with DE/EN heading discipline, CEFR-B2 readability, and .EN.md companion guidance"
+
+    - type: "template"
+      name: "cli-a11y-review-template"
+      file: "templates/cli-a11y-review-template.md"
+      description: "Starter CLI accessibility review (text-mode, screen reader, Braille, no colour-only)"
+
+    - type: "template"
+      name: "a11y-evidence-template"
+      file: "templates/a11y-evidence-template.md"
+      description: "Starter accessibility evidence record"
+
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Wrap specify with accessibility-governance checks"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Wrap plan with accessibility-governance checks"
+      strategy: "wrap"
+
+    - type: "command"
+      name: "speckit.tasks"
+      file: "commands/speckit.tasks.md"
+      description: "Wrap tasks with accessibility-governance checks"
+      strategy: "wrap"
+
+tags:
+  - "a11y"
+  - "accessibility"
+  - "bilingual"
+  - "wcag"
+  - "wcag-2-2"
+  - "cefr-b2"
+  - "inclusion"
+  - "include-everyone"
