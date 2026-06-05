@@ -14,6 +14,10 @@
   dialogues / directory trees; never bare ` ``` `).
 - Plan alt-text and short DE/EN explanations for ASCII diagrams, tables
   needing interpretation, and meaningful images.
+- Plan review of didactic inline-code-comment need for new or changed
+  non-trivial logic.
+- Plan review of existing comments for accuracy whenever the commented
+  logic changes.
 - Plan agent-file parity updates across `AGENTS.md`, `CLAUDE.md`,
   `GEMINI.md`, and `.github/copilot-instructions.md` when shared
   accessibility guidance changes.

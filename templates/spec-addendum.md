@@ -12,6 +12,10 @@
   prose, with domain terms defined on first use.
 - Record whether code blocks, ASCII diagrams, or images need explicit
   language tags, alt text, or short DE/EN explanations beneath them.
+- Record whether the feature adds or changes non-trivial code logic.
+- Record whether didactic inline-code comments are required for learning
+  comprehension or maintainability. If no code logic is affected, record
+  `N/A` with a short rationale.
 - Record whether accessibility evidence must be updated in
   `docs/accessibility/`.
 - Record any justified `N/A` decisions with rationale. Silent omission is

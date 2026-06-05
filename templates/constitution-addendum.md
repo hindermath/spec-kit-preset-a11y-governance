@@ -41,6 +41,19 @@
   below every ASCII diagram, table that needs interpretation, or graphic
   that conveys meaning.
 
+### Didactic inline-code comments
+
+- New or changed non-trivial logic MUST be reviewed for didactic
+  inline-code-comment value when learning comprehension or maintainability
+  is affected.
+- Comments explain the `why`, trade-off, boundary condition, historical
+  deviation, or proof limit. They do not repeat the obvious `what` of the
+  code.
+- Normal comment intensity is 1 to 3 lines before a non-trivial block.
+  Avoid blanket comment flooding.
+- Didactic explanation blocks stay `German first, English second` and
+  CEFR-B2 oriented when they are learner-facing.
+
 ### Code-block language tagging
 
 - Every code block MUST carry a language tag (` ```bash `,

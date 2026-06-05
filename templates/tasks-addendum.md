@@ -14,6 +14,10 @@
 - Add code-block language-tagging audit tasks (no bare ` ``` `).
 - Add alt-text and DE/EN explanation tasks for ASCII diagrams, tables,
   and meaningful images.
+- Add didactic inline-code-comment review tasks for new or changed
+  non-trivial logic.
+- Add update tasks for existing comments when their referenced logic
+  changes.
 - Add agent-file parity tasks across `AGENTS.md`, `CLAUDE.md`,
   `GEMINI.md`, and `.github/copilot-instructions.md` when shared
   accessibility guidance changes.

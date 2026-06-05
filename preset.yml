@@ -3,8 +3,8 @@ schema_version: "1.0"
 preset:
   id: "a11y-governance"
   name: "A11Y Governance"
-  version: "0.2.0"
-  description: "Adds accessibility (WCAG 2.2 AA), bilingual DE/EN delivery, CEFR-B2 readability, and inclusive-content governance to Spec Kit."
+  version: "0.3.0"
+  description: "Adds accessibility (WCAG 2.2 AA), bilingual DE/EN delivery, CEFR-B2 readability, inclusive-content governance, and didactic inline-code-comment review to Spec Kit."
   author: "Thorsten Hindermann"
   repository: "https://github.com/hindermath/spec-kit-preset-a11y-governance"
   license: "MIT"
@@ -63,6 +63,11 @@ provides:
       file: "templates/a11y-evidence-template.md"
       description: "Starter accessibility evidence record"
 
+    - type: "template"
+      name: "didactic-code-comment-check-template"
+      file: "templates/didactic-code-comment-check-template.md"
+      description: "Starter didactic inline-code-comment review for non-trivial logic"
+
     - type: "command"
       name: "speckit.specify"
       file: "commands/speckit.specify.md"
@@ -90,3 +95,4 @@ tags:
   - "cefr-b2"
   - "inclusion"
   - "include-everyone"
+  - "didactic-comments"

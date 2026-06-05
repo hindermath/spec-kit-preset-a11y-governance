@@ -1,6 +1,6 @@
 # A11Y Governance Preset
 
-Version: `0.2.0`
+Version: `0.3.0`
 Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
@@ -8,6 +8,8 @@ Purpose:
 
 - inject accessibility, bilingual-delivery, and CEFR-B2 readability
   expectations into Spec Kit
+- make didactic inline-code-comment review explicit for new or changed
+  non-trivial logic
 - preserve the `Programmierung #include<everyone>` principle as a
   reusable preset instead of a local-only policy
 
@@ -25,6 +27,8 @@ Standards and rules in scope:
 - `CEFR Level B2` readability target for user-facing prose
 - German orthographic correctness (umlauts and `ß`, no ASCII fallbacks)
 - Code-block language tagging discipline (no bare ` ``` ` fences)
+- Didactic inline-code comments for non-trivial logic when learning
+  comprehension or maintainability benefits
 - Agent-file parity across `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, and
   `.github/copilot-instructions.md`
 - A11Y coverage for `CLI`, `documentation`, `HTML`, `UI`, and generated
@@ -49,6 +53,8 @@ Evidence templates included:
 - `cli-a11y-review-template` (text mode, `NO_COLOR`, screen reader,
   Braille)
 - `a11y-evidence-template`
+- `didactic-code-comment-check-template` (comment-needed review for
+  non-trivial code logic)
 
 Default evidence location: `docs/accessibility/`.
 
@@ -58,6 +64,8 @@ When to use:
   `UI`, or generated templates
 - teams that want accessibility, bilingual delivery, and readability
   treated as first-class planning concerns
+- learning, training, or reference projects where non-trivial code logic
+  should remain understandable for apprentices and future maintainers
 
 When not to use:
 

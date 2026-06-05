@@ -15,6 +15,12 @@
 - Aim for CEFR Level B2 in user-facing prose. Define domain terms on
   first use. Add a short DE/EN explanation under every ASCII diagram,
   meaningful table, or graphic.
+- Review new or changed non-trivial logic for didactic inline-code-comment
+  value when learning comprehension or maintainability is affected.
+- Good didactic comments explain the `why`, trade-off, boundary condition,
+  historical deviation, or proof limit. They do not repeat the obvious
+  `what` of the code. Normal intensity is 1 to 3 lines before a
+  non-trivial block.
 - Tag every code block with a language (` ```bash `, ` ```powershell `,
   ` ```text ` for ASCII art / dialogues / directory trees). Bare
   ` ``` ` violates WCAG 4.1.1 (parsing).
