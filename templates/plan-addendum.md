@@ -22,3 +22,10 @@
   `GEMINI.md`, and `.github/copilot-instructions.md` when shared
   accessibility guidance changes.
 - Plan evidence updates under `docs/accessibility/` where relevant.
+
+## Audit Evidence Planning
+
+- Plan audit-ready Markdown evidence for this Spec-Kit run, including owner, reviewer, evidence path, and standard-specific applicability.
+- Plan how each relevant checkpoint will be recorded as `Applicable`, `N/A`, or `Open`.
+- Plan concrete evidence updates under the default evidence directory for this preset; do not leave checklist templates unfilled.
+- Treat `Open` as temporary: assign an owner, follow-up, and re-evaluation trigger.

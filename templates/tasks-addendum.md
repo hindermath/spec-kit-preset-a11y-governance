@@ -22,3 +22,10 @@
   `GEMINI.md`, and `.github/copilot-instructions.md` when shared
   accessibility guidance changes.
 - Add accessibility evidence-update tasks under `docs/accessibility/`.
+
+## Audit Evidence Tasks
+
+- Add tasks to create or update the Markdown evidence/checklist documents for this Spec-Kit run.
+- Each task must name the target evidence file, the standard or governance checkpoint, and the expected decision: `Applicable`, `N/A`, or `Open`.
+- Add tasks to fill evidence rows with reviewer, date, evidence path, residual risk, and follow-up where relevant.
+- Add tasks to verify that no relevant checkpoint was silently omitted.

@@ -29,3 +29,8 @@
   intentional deviation in the same change.
 - Document every `N/A` decision with rationale.
 - Surface required evidence artefacts under `docs/accessibility/`.
+
+## Audit-Ready Spec-Kit Evidence
+
+- When this preset applies, generated or updated Markdown evidence must include the Spec-Kit run, owner/reviewer, evidence path, applicability decision, N/A rationale where relevant, and open follow-up tracking.
+- Do not treat an unfilled starter template as evidence. Evidence exists only after the current run has recorded concrete decisions, paths, and rationale.

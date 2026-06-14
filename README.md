@@ -1,6 +1,6 @@
 # A11Y Governance Preset
 
-Version: `0.3.0`
+Version: `0.4.0`
 Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
@@ -47,6 +47,7 @@ Preset strategy:
 
 Evidence templates included:
 
+- Spec-Kit run evidence fields are embedded in the evidence templates to support audit-ready applicability, N/A rationale, reviewer, and follow-up records.
 - `a11y-checklist-template` (WCAG 2.2 AA criteria coverage)
 - `bilingual-content-check-template` (DE/EN headings, German
   orthography, CEFR-B2 readability, `*.EN.md` companion guidance)
@@ -78,6 +79,10 @@ Coverage note:
   read or edit them
 - CLI output, review checklists, and bilingual delivery all belong to
   the preset's scope
+
+Release notes:
+
+- `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown documents and checklists can record applicability, N/A rationale, reviewer, evidence path, residual risk, and follow-up per standards-relevant Spec-Kit run.
 
 Recommended standalone install priority:
 
