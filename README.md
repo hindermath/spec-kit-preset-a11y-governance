@@ -51,7 +51,7 @@ non-trivial logic needs didactic comments for maintainability and learning.*
 - Wrapper für `speckit.specify`, `speckit.plan` und `speckit.tasks`
 - Templates für A11Y-Review, bilinguale Inhaltsprüfung, CLI-A11Y,
   A11Y-Evidence und didaktische Code-Kommentarprüfung
-- auditfähige Spec-Kit-Run-Evidence-Felder für Anwendbarkeit, N/A-Begründung,
+- auditfähige Spec-Kit-Run-Evidence-Felder für Anwendbarkeit, `N/A`-Begründung,
   Reviewer, Evidence-Pfad, Restrisiko und Follow-up
 
 *The preset provides addenda for the main Spec-Kit artifacts and agent
@@ -73,13 +73,13 @@ provider-administration authority.*
 
 ## Voraussetzungen / Prerequisites
 
-1. kompatible GitHub Spec Kit CLI;
+1. kompatible GitHub Spec-Kit CLI;
 2. gültige Spec-Kit-Integration im Ziel-Repository;
 3. versionierte Constitution und Agent-Guidance;
 4. geklärter Evidence-Ort, standardmäßig `docs/accessibility/`;
 5. bekannte Zielgruppen, Artefakttypen und Sprachebene.
 
-*Before installation, use a compatible GitHub Spec Kit CLI, a valid Spec-Kit
+*Before installation, use a compatible GitHub Spec-Kit CLI, a valid Spec-Kit
 integration, versioned constitution and agent guidance, a clear evidence
 location, and known target audiences, artifact types, and language level.*
 
@@ -128,7 +128,7 @@ Spec-Kit composition.*
 
 ## Standards und Regeln / Standards and Rules
 
-- `WCAG 2.2 Level AA` baseline for every user-facing artefact
+- `WCAG 2.2 Level AA` baseline for every user-facing artifact
 - `DE first, EN second` delivery; bilingual `DE / EN` headings or a
   synchronised `*.EN.md` companion
 - `CEFR Level B2` readability target for user-facing prose
@@ -155,7 +155,7 @@ Spec-Kit composition.*
 ## Evidenzvorlagen / Evidence Templates
 
 - Spec-Kit run evidence fields are embedded in the evidence templates to support
-  audit-ready applicability, N/A rationale, reviewer, and follow-up records.
+  audit-ready applicability, `N/A` rationale, reviewer, and follow-up records.
 - `a11y-checklist-template` (WCAG 2.2 AA criteria coverage)
 - `bilingual-content-check-template` (DE/EN headings, German
   orthography, CEFR-B2 readability, `*.EN.md` companion guidance)
@@ -193,7 +193,7 @@ decisions for WCAG, bilingual delivery, or CEFR B2 are justified.*
 
 ## Nicht verwenden / When Not to Use
 
-- purely internal artefacts with no user-facing surface at all
+- purely internal artifacts with no user-facing surface at all
 - teams that do not want DE-first / EN-second guidance
 
 ## Fehlersuche / Troubleshooting
@@ -233,7 +233,7 @@ Trade-offs sonst schwer verständlich bleiben.
 ## Versionshinweise / Release Notes
 
 - `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown
-  documents and checklists can record applicability, N/A rationale, reviewer,
+  documents and checklists can record applicability, `N/A` rationale, reviewer,
   evidence path, residual risk, and follow-up per standards-relevant Spec-Kit
   run.
 
