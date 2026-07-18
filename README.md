@@ -1,10 +1,12 @@
 # A11Y Governance Preset
 
 Version: `0.4.0`
-Requires: `spec-kit >= 0.8.0` (uses the `wrap` and `append` composition
-strategies introduced in 0.8.x).
+Status: published, standard governance preset
+Priority: `40`
+Requires: Spec Kit `>=0.8.0` (uses the `wrap` and `append` composition
+strategies introduced in 0.8.x)
 
-Purpose:
+## Purpose / Zweck
 
 - inject accessibility, bilingual-delivery, and CEFR-B2 readability
   expectations into Spec Kit
@@ -12,6 +14,20 @@ Purpose:
   non-trivial logic
 - preserve the `Programmierung #include<everyone>` principle as a
   reusable preset instead of a local-only policy
+
+## Install
+
+```bash
+specify preset add \
+  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.0.zip \
+  --priority 40
+specify preset info a11y-governance
+```
+
+```bash
+specify preset add --dev /path/to/a11y-governance --priority 40
+specify preset info a11y-governance
+```
 
 Primary source chapters from `home-baseline` constitution:
 
@@ -72,6 +88,15 @@ When not to use:
 
 - purely internal artefacts with no user-facing surface at all
 - teams that do not want DE-first / EN-second guidance
+
+## Safety / Grenzen
+
+- Installation adds governance prompts, templates, and wrapped Spec Kit
+  command guidance; it does not run accessibility tooling by itself.
+- The preset does not grant repository, remote, merge, deployment, or
+  provider-administration authority.
+- WCAG, bilingual, readability, and evidence decisions remain auditable
+  project decisions and must be recorded when declared N/A.
 
 Coverage note:
 
