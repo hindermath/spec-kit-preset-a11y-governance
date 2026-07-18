@@ -3,13 +3,13 @@
 Version: `0.4.0`
 Status: published, standard governance preset
 Priority: `40`
-Requires: Spec Kit `>=0.8.0` (uses the `wrap` and `append` composition
-strategies introduced in 0.8.x)
+Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
+strategies introduced in 0.8.x).
 
 ## Purpose / Zweck
 
 - inject accessibility, bilingual-delivery, and CEFR-B2 readability
-  expectations into Spec Kit
+  expectations into Spec-Kit
 - make didactic inline-code-comment review explicit for new or changed
   non-trivial logic
 - preserve the `Programmierung #include<everyone>` principle as a
@@ -91,7 +91,7 @@ When not to use:
 
 ## Safety / Grenzen
 
-- Installation adds governance prompts, templates, and wrapped Spec Kit
+- Installation adds governance prompts, templates, and wrapped Spec-Kit
   command guidance; it does not run accessibility tooling by itself.
 - The preset does not grant repository, remote, merge, deployment, or
   provider-administration authority.
@@ -108,7 +108,3 @@ Coverage note:
 Release notes:
 
 - `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown documents and checklists can record applicability, N/A rationale, reviewer, evidence path, residual risk, and follow-up per standards-relevant Spec-Kit run.
-
-Recommended standalone install priority:
-
-- `30`
