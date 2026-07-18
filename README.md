@@ -6,7 +6,7 @@ Priority: `40`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in 0.8.x).
 
-## Purpose / Zweck
+## Zweck / Purpose
 
 - inject accessibility, bilingual-delivery, and CEFR-B2 readability
   expectations into Spec-Kit
@@ -15,7 +15,7 @@ strategies introduced in 0.8.x).
 - preserve the `Programmierung #include<everyone>` principle as a
   reusable preset instead of a local-only policy
 
-## Install
+## Installation / Install
 
 ```bash
 specify preset add \
@@ -29,13 +29,13 @@ specify preset add --dev /path/to/a11y-governance --priority 40
 specify preset info a11y-governance
 ```
 
-Primary source chapters from `home-baseline` constitution:
+## Quellkapitel / Source Chapters
 
 - `VII. Programmierung #include<everyone> — Inclusion & Accessibility By
   Default`
 - `VIII. DE-First / EN-Second Bilingual Delivery`
 
-Standards and rules in scope:
+## Standards und Regeln / Standards and Rules
 
 - `WCAG 2.2 Level AA` baseline for every user-facing artefact
 - `DE first, EN second` delivery; bilingual `DE / EN` headings or a
@@ -50,7 +50,7 @@ Standards and rules in scope:
 - A11Y coverage for `CLI`, `documentation`, `HTML`, `UI`, and generated
   templates
 
-Preset strategy:
+## Preset-Strategie / Preset Strategy
 
 - append accessibility governance to `constitution-template`,
   `spec-template`, `plan-template`, and `tasks-template`
@@ -61,9 +61,10 @@ Preset strategy:
 - provide starter templates for A11Y review, bilingual content review,
   CLI accessibility review, and accessibility evidence
 
-Evidence templates included:
+## Evidenzvorlagen / Evidence Templates
 
-- Spec-Kit run evidence fields are embedded in the evidence templates to support audit-ready applicability, N/A rationale, reviewer, and follow-up records.
+- Spec-Kit run evidence fields are embedded in the evidence templates to support
+  audit-ready applicability, N/A rationale, reviewer, and follow-up records.
 - `a11y-checklist-template` (WCAG 2.2 AA criteria coverage)
 - `bilingual-content-check-template` (DE/EN headings, German
   orthography, CEFR-B2 readability, `*.EN.md` companion guidance)
@@ -75,7 +76,7 @@ Evidence templates included:
 
 Default evidence location: `docs/accessibility/`.
 
-When to use:
+## Einsatz / When to Use
 
 - any project that produces user-facing `CLI`, `documentation`, `HTML`,
   `UI`, or generated templates
@@ -84,27 +85,30 @@ When to use:
 - learning, training, or reference projects where non-trivial code logic
   should remain understandable for apprentices and future maintainers
 
-When not to use:
+## Nicht verwenden / When Not to Use
 
 - purely internal artefacts with no user-facing surface at all
 - teams that do not want DE-first / EN-second guidance
 
-## Safety / Grenzen
+## Sicherheit und Grenzen / Safety and Boundaries
 
 - Installation adds governance prompts, templates, and wrapped Spec-Kit
   command guidance; it does not run accessibility tooling by itself.
 - The preset does not grant repository, remote, merge, deployment, or
   provider-administration authority.
 - WCAG, bilingual, readability, and evidence decisions remain auditable
-  project decisions and must be recorded when declared N/A.
+  project decisions and must be recorded when declared `N/A`.
 
-Coverage note:
+## Abdeckung / Coverage
 
 - generated templates count as user-facing when humans are expected to
   read or edit them
 - CLI output, review checklists, and bilingual delivery all belong to
   the preset's scope
 
-Release notes:
+## Versionshinweise / Release Notes
 
-- `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown documents and checklists can record applicability, N/A rationale, reviewer, evidence path, residual risk, and follow-up per standards-relevant Spec-Kit run.
+- `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown
+  documents and checklists can record applicability, N/A rationale, reviewer,
+  evidence path, residual risk, and follow-up per standards-relevant Spec-Kit
+  run.
