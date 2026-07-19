@@ -1,6 +1,6 @@
 # A11Y Governance Preset
 
-Version: `0.4.0`
+Version: `0.4.1`
 Status: published, standard governance preset
 Priority: `40`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -89,7 +89,7 @@ location, and known target audiences, artifact types, and language level.*
 
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.0.zip \
+  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.1.zip \
   --priority 40
 specify preset info a11y-governance
 ```
@@ -232,6 +232,8 @@ Trade-offs sonst schwer verständlich bleiben.
 
 ## Versionshinweise / Release Notes
 
+- `v0.4.1` adds accessible text/JSON status parity, stable labelled ordering,
+  and understandable repeated status/resume output.
 - `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown
   documents and checklists can record applicability, `N/A` rationale, reviewer,
   evidence path, residual risk, and follow-up per standards-relevant Spec-Kit
