@@ -38,6 +38,10 @@
 
 - Output is meaningful in plain ASCII (no required Unicode glyphs that
   break in text browsers or older terminals):
+- Every machine-readable JSON status has an equivalent concise text status;
+  neither format is the sole source of required operational meaning:
+- Status rows use stable ordering, explicit labels, and complete words rather
+  than relying on column position, colour, icons, or animation:
 - ASCII box-drawing tables have equal-width rows when used:
 - No reliance on emoji or icon fonts for meaning:
 
@@ -55,6 +59,8 @@
   that flood the line):
 - Status updates do not depend on cursor positioning, in-place rewrites,
   or animations as the only signal:
+- Repeated status and resume attempts remain understandable without duplicate
+  or contradictory announcements:
 
 ## Keyboard and Interaction
 
