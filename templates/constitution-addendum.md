@@ -40,6 +40,12 @@
 - Add a short CEFR-B2 explanation in German first and English second
   below every ASCII diagram, table that needs interpretation, or graphic
   that conveys meaning.
+- Each project MUST declare the audience and assumed prior knowledge for
+  learner-facing material. A project that targets first-time Spec Kit users
+  MUST define Spec Kit and workflow-specific terms at first use.
+- Dependency, status, decision, and next-action information MUST remain
+  understandable as ordered text. Diagrams may support that text, but cannot
+  be the only source of meaning.
 
 ### Didactic inline-code comments
 

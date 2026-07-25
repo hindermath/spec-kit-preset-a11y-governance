@@ -8,6 +8,10 @@
   is added or changed; plan whether headings will use the inline
   `DE / EN` pattern or a synchronised `*.EN.md` companion document.
 - Plan a `CEFR Level B2` readability pass on user-facing prose.
+- Plan a check against the project's declared audience and prior-knowledge
+  boundary. Define technical and Spec Kit terms on first use where needed.
+- Plan a text-first review for dependency, status, decision, and next-action
+  information; a diagram is supporting evidence, not the sole explanation.
 - Plan checks for German orthographic correctness (umlauts and `ß`); no
   ASCII fallbacks.
 - Plan code-block language tagging audit (` ```text ` for ASCII art /

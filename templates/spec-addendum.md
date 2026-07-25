@@ -10,6 +10,10 @@
   pattern or use a `*.EN.md` companion document.
 - Record the readability target — default `CEFR Level B2` for user-facing
   prose, with domain terms defined on first use.
+- Record the declared audience, its assumed prior knowledge, and whether
+  first-time Spec Kit users are included.
+- Record how dependencies, status, decisions, and next actions remain
+  available without relying only on a diagram, colour, or visual position.
 - Record whether code blocks, ASCII diagrams, or images need explicit
   language tags, alt text, or short DE/EN explanations beneath them.
 - Record whether the feature adds or changes non-trivial code logic.
