@@ -1,10 +1,20 @@
 # A11Y Governance Preset
 
-Version: `0.4.1`
+Version: `0.4.2`
 Status: published, standard governance preset
 Priority: `40`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in `0.8.x`).
+
+Version `0.4.2` ergänzt einen portablen Zielgruppenvertrag: Das Projekt
+deklariert Zielgruppe und Vorwissen. Lernmaterial erklärt Fach- und
+Spec-Kit-Begriffe beim ersten Auftreten und stellt Abhängigkeiten, Status,
+Entscheidungen und nächste Schritte immer auch als geordneten Text bereit.
+
+*Version `0.4.2` adds a portable audience contract: the project declares its
+audience and assumed prior knowledge. Learning material explains domain and
+Spec Kit terms on first use and always provides dependencies, status,
+decisions, and next actions as ordered text.*
 
 ## Zweck / Purpose
 
@@ -89,7 +99,7 @@ location, and known target audiences, artifact types, and language level.*
 
 ```bash
 specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.1.zip \
+  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.2.zip \
   --priority 40
 specify preset info a11y-governance
 ```
@@ -232,6 +242,8 @@ Trade-offs sonst schwer verständlich bleiben.
 
 ## Versionshinweise / Release Notes
 
+- `v0.4.2` adds the project-declared audience, prior-knowledge, first-use
+  terminology, and text-first information contract.
 - `v0.4.1` adds accessible text/JSON status parity, stable labelled ordering,
   and understandable repeated status/resume output.
 - `v0.4.0` adds audit-ready Spec-Kit run evidence fields so generated Markdown

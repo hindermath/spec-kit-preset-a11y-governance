@@ -15,6 +15,11 @@
 - Aim for CEFR Level B2 in user-facing prose. Define domain terms on
   first use. Add a short DE/EN explanation under every ASCII diagram,
   meaningful table, or graphic.
+- Read the project's declared audience before producing learner-facing
+  material. Do not assume prior Spec Kit knowledge unless the project
+  explicitly declares it. Explain workflow terms at first use, and keep
+  dependencies, status, decisions, and next actions available as ordered text
+  rather than only as a visual.
 - Review new or changed non-trivial logic for didactic inline-code-comment
   value when learning comprehension or maintainability is affected.
 - Good didactic comments explain the `why`, trade-off, boundary condition,

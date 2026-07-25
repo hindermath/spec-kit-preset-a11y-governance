@@ -7,6 +7,10 @@
   `*.EN.md` companion document.
 - Add CEFR-B2 readability review tasks for user-facing prose; ensure each
   domain term is defined on first use.
+- Add tasks that verify the declared audience and prior-knowledge boundary,
+  including first-use explanations for Spec Kit workflow terms.
+- Add a text-first check for dependencies, status, decisions, and next
+  actions so no acceptance evidence depends only on a visual.
 - Add a German orthographic correctness check (umlauts and `ß`; no ASCII
   fallbacks).
 - Add CLI accessibility review tasks for terminal-facing output (text
