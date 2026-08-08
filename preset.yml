@@ -3,7 +3,7 @@ schema_version: "1.0"
 preset:
   id: "a11y-governance"
   name: "A11Y Governance"
-  version: "0.4.2"
+  version: "0.4.3"
   description: "Adds accessibility (WCAG 2.2 AA), accessible text and JSON status parity, bilingual DE/EN delivery, CEFR-B2 readability, inclusive-content governance, didactic inline-code-comment review, and audit-ready Spec-Kit run evidence to Spec Kit."
   author: "Thorsten Hindermann"
   repository: "https://github.com/hindermath/spec-kit-preset-a11y-governance"
@@ -14,6 +14,11 @@ requires:
 
 provides:
   templates:
+    - type: "template"
+      name: "a11y-governance-model-routing"
+      file: "model-routing.json"
+      description: "Agent-neutral command-to-role routing contract"
+
     - type: "template"
       name: "constitution-template"
       file: "templates/constitution-addendum.md"
