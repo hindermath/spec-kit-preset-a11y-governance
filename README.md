@@ -1,6 +1,13 @@
 # A11Y Governance Preset
 
-Version: `0.4.3`
+Patch **0.4.4** liefert die verbesserte zweisprachige Einstiegs- und
+Kompositionsdokumentation. Verhalten und Berechtigungsgrenzen bleiben erhalten.
+[Release-Nachweis / Release record](docs/release-0.4.4-validation.md).
+
+*Patch 0.4.4 packages the improved bilingual getting-started and composition
+guide. Behavior and authority boundaries remain unchanged.*
+
+Version: `0.4.4`
 Status: published, standard governance preset
 Priority: `40`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
@@ -152,7 +159,7 @@ location, and known target audiences, artifact types, and language level.*
 ### Veröffentlichter Tag / Published Tag
 
 ```bash
-specify preset add --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.3.zip --priority 40
+specify preset add --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.4.zip --priority 40
 specify preset info a11y-governance
 ```
 
