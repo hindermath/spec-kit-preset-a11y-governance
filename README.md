@@ -6,17 +6,71 @@ Priority: `40`
 Requires: Spec-Kit `>=0.8.0` (uses the `wrap` and `append` composition
 strategies introduced in `0.8.x`).
 
-Version `0.4.3` ergänzt einen portablen Zielgruppenvertrag: Das Projekt
+Version `0.4.2` ergänzt einen portablen Zielgruppenvertrag: Das Projekt
 deklariert Zielgruppe und Vorwissen. Lernmaterial erklärt Fach- und
 Spec-Kit-Begriffe beim ersten Auftreten und stellt Abhängigkeiten, Status,
 Entscheidungen und nächste Schritte immer auch als geordneten Text bereit.
 
-*Version `0.4.3` adds a portable audience contract: the project declares its
+*Version `0.4.2` adds a portable audience contract: the project declares its
 audience and assumed prior knowledge. Learning material explains domain and
 Spec Kit terms on first use and always provides dependencies, status,
 decisions, and next actions as ordered text.*
 
 ## Zweck / Purpose
+
+### Einstieg und Arbeitsweise / Getting Started and Workflow
+
+Nach Installation im initialisierten Zielprojekt bindet das
+[Manifest](preset.yml) `wrap`-Anweisungen für Specify/Plan/Tasks und
+`append`-Ergänzungen ihrer Dokumentvorlagen und Constitution ein. Es startet
+keinen Screenreader, Scanner oder Übersetzungsreview. Separate Starter und
+das Agent-Guidance-Addendum sind Hilfsmittel, keine automatisch ausgefüllten
+Nachweise oder Garantie der Übernahme in jede Agenten-Datei.
+
+*After installation in an initialized target project, the [manifest](preset.yml)
+integrates wrap instructions for Specify/Plan/Tasks and append contributions
+for their templates and constitution. It starts no screen reader, scanner or
+translation review. Separate starters and the agent-guidance addendum are
+aids, not completed evidence or guaranteed inclusion in every agent file.*
+
+Beispiel für einen CLI-Statusbefehl: Wähle `cli-a11y-review-template` und
+`bilingual-content-check-template`. Plane konkrete Prüfungen für Textausgabe,
+Tastatur-/Hilfsmittelnutzung, Sprache und verständliche Statusbezeichnungen;
+halte Ergebnisse etwa in `docs/accessibility/cli-status-review.md` fest.
+Specify benennt Zielgruppe und Anforderungen, Plan die Prüfmethoden, Tasks
+die verbleibenden Schritte und Nachweisdateien. Tests und fachliche Abnahme
+müssen tatsächlich erfolgen; Beispielpfade belegen keinen Erfolg.
+
+*For a CLI status command, select `cli-a11y-review-template` and
+`bilingual-content-check-template`. Plan text output, keyboard/assistive
+technology, language and clear status-label checks; record results, for
+example, in `docs/accessibility/cli-status-review.md`. Specify defines audience
+and requirements, Plan the methods, Tasks remaining steps and evidence files.
+Actual tests and acceptance are still necessary; example paths prove no pass.*
+
+Bestehende Evidence wiederverwenden und auf Aktualität prüfen. `Applicable`
+ist keine WCAG-Abnahme; `N/A` braucht Begründung und Trigger, `Open` Owner
+und Folgeaktion. Ein grüner technischer Check ersetzt keine Hilfsmittelprüfung.
+
+*Reuse existing evidence after checking freshness. Applicable is not WCAG
+acceptance; justify N/A and its trigger, assign an owner and follow-up to Open.
+A successful technical check does not replace assistive-technology testing.*
+
+Priorität ist keine zeitliche Testreihenfolge: kleinere Zahlen bedeuten höhere
+Auflösungspriorität. `append` ergänzt und `wrap` verschachtelt; gleichnamige
+`replace`-Beiträge oder Projekt-Overrides können Inhalte verdrängen. Eigene
+Reihenfolgen nicht als pauschal geprüft behandeln. Kontrolliere
+`specify preset resolve plan-template` und erzeugte Agentenflächen.
+
+*Priority is not a test schedule: lower numbers mean higher precedence.
+Append adds and wrap nests; same-name replace layers or project overrides may
+hide content. Custom orderings are not universally tested. Inspect
+plan-template resolution and generated agent surfaces.*
+
+Leserpfad / Reader path: [Installation](#installation--install) →
+[Evidenzvorlagen / Evidence Templates](#evidenzvorlagen--evidence-templates) →
+[Prüfung / Verification](#prüfung--verification) →
+[Fehlersuche / Troubleshooting](#fehlersuche--troubleshooting).
 
 Dieses Standard-Preset bringt Barrierefreiheit, DE-first/EN-second
 Auslieferung, CEFR-B2-Lesbarkeit und didaktische Inline-Kommentarprüfung in
@@ -98,9 +152,7 @@ location, and known target audiences, artifact types, and language level.*
 ### Veröffentlichter Tag / Published Tag
 
 ```bash
-specify preset add \
-  --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.3.zip \
-  --priority 40
+specify preset add --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.3.zip --priority 40
 specify preset info a11y-governance
 ```
 
@@ -115,20 +167,18 @@ specify preset info a11y-governance
 
 | Priority | Preset |
 |---:|---|
-| 10 | `security-governance` |
-| 20 | `architecture-governance` |
-| 30 | `isaqb-architecture-governance` |
-| 40 | `a11y-governance` |
-| 50 | `cross-platform-governance` |
-| 60 | `agent-parity-governance` |
+| 10 | [security-governance](https://github.com/hindermath/spec-kit-preset-security-governance) |
+| 20 | [architecture-governance](https://github.com/hindermath/spec-kit-preset-architecture-governance) |
+| 30 | [isaqb-architecture-governance](https://github.com/hindermath/spec-kit-preset-isaqb-architecture-governance) |
+| 40 | [a11y-governance](https://github.com/hindermath/spec-kit-preset-a11y-governance) |
+| 50 | [cross-platform-governance](https://github.com/hindermath/spec-kit-preset-cross-platform-governance) |
+| 60 | [agent-parity-governance](https://github.com/hindermath/spec-kit-preset-agent-parity-governance) |
 
-Dieses Preset liegt nach Security und Architektur, damit nutzerseitige
-Artefakte, Dokumentation, Templates und Lernmaterialien in der gleichen
-Spec-Kit-Komposition geprüft werden.
+Priorität 40 ordnet dieses Preset in die empfohlene Komposition mit Security
+und Architektur ein; sie startet keine zeitlich nachgelagerte Prüfung.
 
-*This preset runs after security and architecture so user-facing artifacts,
-documentation, templates, and learning material are checked in the same
-Spec-Kit composition.*
+*Priority 40 places accessibility alongside security and architecture in the
+recommended composition; it does not schedule or execute a later review.*
 
 ## Quellkapitel / Source Chapters
 
@@ -182,7 +232,7 @@ Default evidence location: `docs/accessibility/`.
 ```bash
 specify preset list
 specify preset info a11y-governance
-specify preset resolve
+specify preset resolve cli-a11y-review-template
 specify check
 ```
 
