@@ -88,3 +88,15 @@
 - Open issues:
 - Required fixes and owners:
 - Re-review trigger (date, release, scope change):
+
+## Nutzungshilfe / Reader help
+
+DE: Nutzbare Oberflächen und verständliche zweisprachige Dokumentation von Anfang an einplanen. Diese Vorlage ist ein auszufüllender Starter, kein bestandener Nachweis. Vorhandene passende Evidence weiterverwenden.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-a11y-governance/blob/main/docs/user-guide.md).
+
+EN: Plan usable interfaces and understandable bilingual documentation from the start. This template is a starter to complete, not passed evidence. Reuse suitable existing evidence.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-a11y-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.
