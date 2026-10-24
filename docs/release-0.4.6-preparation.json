@@ -1,0 +1,14 @@
+{
+  "release_status": "NotEstablishedAtPreparation",
+  "candidate_status": "Prepared",
+  "packageVersion": "0.4.6",
+  "presetId": "a11y-governance",
+  "externalPublicationEvidence": "https://github.com/hindermath/spec-kit-preset-a11y-governance/releases/tag/v0.4.6",
+  "documentationPr": "https://github.com/hindermath/spec-kit-preset-a11y-governance/pull/8",
+  "schemaVersion": 1,
+  "historicalPublicationVersion": "0.4.5",
+  "runtimeChanged": false,
+  "generatorSchemaChanged": false,
+  "preparedAt": "2026-10-24T12:50:04.9649640+00:00",
+  "sourceCommit": "185aaf2f2dd4412daf6b4e0942b3de3d18a0cff0"
+}
