@@ -1,6 +1,6 @@
 {
   "id": "a11y-governance",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "priority": 40,
   "readers": [
     "docs/user-guide.md",
@@ -8,5 +8,6 @@
     "docs/documentation-closeout.md"
   ],
   "sourceBaseCommit": "bc3f819cb11ab8985d75a631661d6298acdc3ed9",
-  "preserveHistoricalEvidence": true
+  "preserveHistoricalEvidence": true,
+  "publicationEvidenceVersion": "0.4.5"
 }
