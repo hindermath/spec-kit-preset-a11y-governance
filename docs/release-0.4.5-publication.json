@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "presetId": "a11y-governance",
+  "version": "0.4.5",
+  "repository": "https://github.com/hindermath/spec-kit-preset-a11y-governance",
+  "candidate_status": "HistoricalCandidate",
+  "release_status": "Published",
+  "tag": "v0.4.5",
+  "tagCommit": "58f02a2496094a34e95c12a6160f970f99227720",
+  "verifiedAt": "2026-10-24T10:55:29.0657940+00:00",
+  "release": {
+    "id": 422326317,
+    "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/releases/tag/v0.4.5",
+    "publishedAt": "2026-10-23T21:29:33.0000000+00:00",
+    "preRelease": false,
+    "draft": false
+  },
+  "archive": {
+    "sha256": "764823f359f0071a165020e3b19957cc48ea8a815764bc0df3ed0c64a4cf699d",
+    "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.5.zip",
+    "status": "Verified",
+    "verifiedAt": "2026-10-24T10:55:29.0657940+00:00",
+    "bytes": 48081
+  },
+  "evidenceComplete": true,
+  "historicalDocumentSha256": "4cf8133f57b1fe394589c2203c7d87632468dec58e2e99ed4e18fd3ec13987fc",
+  "comparison": {
+    "fromTag": "v0.4.3",
+    "toTag": "v0.4.5",
+    "toCommit": "58f02a2496094a34e95c12a6160f970f99227720",
+    "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/compare/c8e0352f30c7e060b03d55cd112755c01cf58bb3...58f02a2496094a34e95c12a6160f970f99227720",
+    "fromCommit": "c8e0352f30c7e060b03d55cd112755c01cf58bb3"
+  },
+  "improvements": [
+    {
+      "introducedIn": "v0.4.4",
+      "type": "DocumentationUsability",
+      "sourcePaths": [
+        "README.md"
+      ],
+      "problem": {
+        "de": "Einstieg, Komposition und menschliche A11Y-Entscheidungen waren nicht hinreichend getrennt erklärt.",
+        "en": "Entry points, composition and human accessibility decisions needed clearer explanation."
+      },
+      "description": {
+        "de": "Der Einstieg wurde präzisiert; 0.4.5 ergänzt DE-/EN-Leserpfade, passende Beispiele und Dokumentationsregressionen.",
+        "en": "The entry point was clarified; 0.4.5 adds DE/EN reader paths, examples and documentation regressions."
+      },
+      "benefit": {
+        "de": "Anwendende können Prüfungen vorbereiten, ohne automatische WCAG-Konformität oder Zertifizierung zu erwarten.",
+        "en": "Users can prepare checks without expecting automatic WCAG conformance or certification."
+      },
+      "commit": "bc3f819cb11ab8985d75a631661d6298acdc3ed9"
+    },
+    {
+      "introducedIn": "v0.4.5",
+      "type": "DocumentationUsability",
+      "sourcePaths": [
+        "docs/user-guide.md",
+        "docs/user-guide.EN.md",
+        "tests/test-documentation-closeout.ps1"
+      ],
+      "problem": {
+        "de": "Ein kurzer README-Einstieg erklärte die vollständigen Leserpfade und Grenzen noch nicht gleichwertig.",
+        "en": "The short README entry did not yet explain the complete reader journey and limits equally."
+      },
+      "description": {
+        "de": "Deutsch-/Englisch-Leitfäden, Command-/Vorlagen-Erklärungen und Dokumentationsregressionen wurden ergänzt. Frühere Einstiegsverbesserungen und der letzte Patch werden getrennt ausgewiesen.",
+        "en": "German/English guides, command/template explanations and documentation regressions were added. Earlier entry-point improvements and the final patch are reported separately."
+      },
+      "benefit": {
+        "de": "Lernende finden Voraussetzungen, Beispiel, Ergebnis und Fehlerhilfe. Neue Textklarheit ist keine neue Runtime-Funktion oder menschliche Abnahme.",
+        "en": "Learners can find prerequisites, an example, its result and troubleshooting. Clearer text is not a new runtime feature or human acceptance."
+      },
+      "commit": "58f02a2496094a34e95c12a6160f970f99227720"
+    }
+  ],
+  "historicalValidation": {
+    "checks": [
+      {
+        "name": "Reader paths (windows-2022)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/actions/runs/39992113358/job/120546187447",
+        "startedAt": "2026-10-23T17:04:54Z",
+        "completedAt": "2026-10-23T17:05:02Z",
+        "head": "d392b960c48b99af8d614ff4e90d6fd0e0126dbc"
+      },
+      {
+        "name": "Reader paths (macos-15)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/actions/runs/39992113358/job/120546187385",
+        "startedAt": "2026-10-23T17:05:37Z",
+        "completedAt": "2026-10-23T17:05:48Z",
+        "head": "d392b960c48b99af8d614ff4e90d6fd0e0126dbc"
+      },
+      {
+        "name": "Reader paths (ubuntu-24.04)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/hindermath/spec-kit-preset-a11y-governance/actions/runs/39992113358/job/120546187082",
+        "startedAt": "2026-10-23T17:04:53Z",
+        "completedAt": "2026-10-23T17:05:04Z",
+        "head": "d392b960c48b99af8d614ff4e90d6fd0e0126dbc"
+      }
+    ],
+    "pr": "https://github.com/hindermath/spec-kit-preset-a11y-governance/pull/7",
+    "mergeCommit": "58f02a2496094a34e95c12a6160f970f99227720",
+    "reviewedHead": "d392b960c48b99af8d614ff4e90d6fd0e0126dbc"
+  },
+  "newDocumentationReview": "Pending exact-head human review; no merge or publication authority.",
+  "boundary": "Documentation source only; no new package, runtime behavior, approval, installation, catalog update or cancelled dynamic routing."
+}
