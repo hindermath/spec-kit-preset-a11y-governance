@@ -1,10 +1,10 @@
 # A11Y Governance Preset
 
-<!-- current-package: 0.4.6 -->
+<!-- current-package: 0.4.7 -->
 
-Paketkennung: **v0.4.6**. [Vorbereitung und Veröffentlichungsgrenze](docs/release-0.4.6-validation.md). Die Release-Seite und der externe Archivnachweis belegen die Veröffentlichung, nicht dieser Vorbereitungsstand. Frühere Versionsnachweise unten bleiben historisch.
+Paketkennung: **v0.4.7**. [Vorbereitung und Veröffentlichungsgrenze](docs/release-0.4.7-validation.md). Die Release-Seite und der externe Archivnachweis belegen die Veröffentlichung, nicht dieser Vorbereitungsstand. Frühere Versionsnachweise unten bleiben historisch.
 
-<span lang="en">Package identity: v0.4.6. The release page and external archive evidence prove publication, not this preparation snapshot. Earlier version records below remain historical.</span>
+<span lang="en">Package identity: v0.4.7. The release page and external archive evidence prove publication, not this preparation snapshot. Earlier version records below remain historical.</span>
 
 [Release-Abschluss und Verbesserungsprofil / Publication closeout and improvement profile](docs/release-0.4.5-validation.md).
 
@@ -183,7 +183,7 @@ location, and known target audiences, artifact types, and language level.*
 ### Veröffentlichter Tag / Published Tag
 
 ```bash
-specify preset add --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.6.zip --priority 40
+specify preset add --from https://github.com/hindermath/spec-kit-preset-a11y-governance/archive/refs/tags/v0.4.7.zip --priority 40
 specify preset info a11y-governance
 ```
 
